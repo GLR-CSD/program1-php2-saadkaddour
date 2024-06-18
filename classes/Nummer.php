@@ -135,14 +135,13 @@ class Nummer
     public function save(PDO $db): void
     {
         // Voorbereiden van de query
-        $stmt = $db->prepare("INSERT INTO persoon (AlbumID, Titel, Duur, URL) VALUES (:AlbumID, :Titel, :Duur, :URL)");
+        $stmt = $db->prepare("INSERT INTO nummer (AlbumID, Titel, Duur, URL) VALUES (:AlbumID, :Titel, :Duur, :URL)");
         $stmt->bindParam(':AlbumID', $this->AlbumID);
         $stmt->bindParam(':Titel', $this->Titel);
         $stmt->bindParam(':Duur', $this->Duur);
         $stmt->bindParam(':URL', $this->URL);
         $stmt->execute();
     }
-
 
     public function getAlbumID(): string
     {

@@ -38,35 +38,31 @@
             </ul>
         </div>
     <?php endif; ?>
-    <form action="toevoegen.php" method="post">
-        <label for="voornaam">Voornaam:</label>
-        <input type="text" id="voornaam" name="voornaam" value="<?= $formValues['voornaam'] ?? '' ?>" required>
-        <?php if (isset($errors['voornaam'])): ?>
-            <span style="color: red;"><?= $errors['voornaam'] ?></span>
+    <form action="nummer_toevoegen.php" method="post">
+        <label for="AlbumID">AlbumID:</label>
+        <input type="number" id="AlbumID" name="AlbumID" value="<?= $formValues['AlbumID'] ?? '' ?>" required>
+        <?php if (isset($errors['AlbumID'])): ?>
+            <span style="color: red;"><?= $errors['AlbumID'] ?></span>
         <?php endif; ?><br>
 
-        <label for="achternaam">Achternaam:</label>
-        <input type="text" id="achternaam" name="achternaam" value="<?= $formValues['achternaam'] ?? '' ?>"  required>
-        <?php if (isset($errors['achternaam'])): ?>
-            <span style="color: red;"><?= $errors['achternaam'] ?></span>
+        <label for="Titel">Titel:</label>
+        <input type="text" id="Titel" name="Titel" value="<?= $formValues['Titel'] ?? '' ?>"  required>
+        <?php if (isset($errors['Titel'])): ?>
+            <span style="color: red;"><?= $errors['Titel'] ?></span>
         <?php endif; ?><br>
 
-        <label for="telefoonnummer">Telefoonnummer:</label>
-        <input type="text" id="telefoonnummer" name="telefoonnummer" value="<?= $formValues['telefoonnummer'] ?? '' ?>">
-        <?php if (isset($errors['telefoonnummer'])): ?>
-            <span style="color: red;"><?= $errors['telefoonnummer'] ?></span>
+        <label for="Duur">Duur:</label>
+        <input type="time" id="Duur" name="Duur" value="<?= $formValues['Duur'] ?? '' ?>">
+        <?php if (isset($errors['Duur'])): ?>
+            <span style="color: red;"><?= $errors['Duur'] ?></span>
         <?php endif; ?><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" value="<?= $formValues['email'] ?? '' ?>">
-        <?php if (isset($errors['email'])): ?>
-            <span style="color: red;"><?= $errors['email'] ?></span>
+        <label for="URL">URL:</label>
+        <input type="url" id="URL" name="URL" value="<?= $formValues['URL'] ?? '' ?>">
+        <?php if (isset($errors['URL'])): ?>
+            <span style="color: red;"><?= $errors['URL'] ?></span>
         <?php endif; ?><br>
 
-        <label for="opmerkingen">Opmerkingen:</label><br>
-        <textarea id="opmerkingen" name="opmerkingen" rows="4" cols="50">
-            <?= $formValues['opmerkingen'] ?? '' ?>
-        </textarea><br>
         <input type="submit" value="Toevoegen">
     </form>
 </div>
