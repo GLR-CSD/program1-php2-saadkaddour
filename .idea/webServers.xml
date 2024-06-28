@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="b9d17751-e8e4-49d2-8e06-325f6d6207ed" name="saad" url="https://101364.stu.sd-lab.nl/php/PHP2">
-        <fileTransfer rootFolder="/httpdocs/php/PHP2" host="web03.sd-lab.nl" port="21">
+        <fileTransfer rootFolder="/httpdocs/Toetsweek4/program1" host="web03.sd-lab.nl" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
